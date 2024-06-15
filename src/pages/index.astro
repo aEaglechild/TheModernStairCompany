@@ -1,0 +1,28 @@
+---
+import Navigation from "../components/Navigation.astro"
+import {Image} from "astro:assets"
+import featureImg from './../images/sample-stair-2.jpg'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="images/webp" href="MSCfavion1.webp" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>The Modern Stair Company</title>
+	</head>
+	<body>
+		<div class="relative h-screen ">
+			<Image src={featureImg} alt="feature image" class="absolute inset-0 w-full h-full object-cover" />
+			<div class="absolute inset-0">
+				<Navigation/>
+			</div>
+			<div class="absolute inset-0 flex flex-col justify-center mt-60 ml-40" >
+				<h1 class="text-black text-6xl font-semibold py-5">CREATE A CENTRE <br/>PIECE THAT SHOWCASES <br/> YOUR HOME</h1>
+				<p class="text-black text-2xl font-medium">The Modern Stair Company Offers Custom Floating Stairs Styles <br/>such AS Cantilever, Zig Zag, Mono Beam, Waterfall, <br/>Open Rise Steel & Open Rise Wooden Staircases.</p>
+			</div>
+		</div>
+
+	</body>
+</html>
